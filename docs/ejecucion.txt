@@ -1,0 +1,110 @@
+[P01] Potencia C1: 40.0 kW
+[P02] Potencia C1: 55.0 kW
+[P03] Tiempo estimado: 1.20 horas
+[P04] No se puede aumentar la potencia. El resultado seria 65.0 kW.
+[P04] Potencia C1: 55.0 kW
+[P05] Potencia C1: 25.0 kW
+[P06] Tiempo estimado: 2.50 horas
+[P07] Tiempo estimado: 1.25 horas
+[P08] Potencia C1: 30.0 kW
+[P09] Potencia C1: 45.0 kW
+[P10] No se puede reducir la potencia. El resultado seria -5.0 kW.
+[P10] Potencia C1: 45.0 kW
+[P11] Potencia C1: 0.0 kW
+[P12] No se puede calcular el tiempo: la potencia actual es 0.
+[P12] Tiempo estimado: -1.00 horas
+[P13] No se puede aumentar la potencia. El resultado seria 30.0 kW.
+[P13] Potencia C2: 22.0 kW
+[P13] Potencia C3: 120.0 kW
+[P13] Potencia C4: 7.4 kW
+[P13] Potencia C5: 0.0 kW
+[P14] MURAL: 2
+[P14] PEDESTAL: 1
+[P14] RAPIDO_DC: 1
+[P14] ULTRARRAPIDO: 1
+[P14] PORTATIL: 0
+[P14] BIDIRECCIONAL_V2G: 0
+[P15] Promedio: 29.88 kW
+[P16] Mayor potencia: Delta | 120.0 kW
+[P17] Excesos validos: 2
+[P18] TIPO_2: 3 | Siemens, Wallbox, Enel X
+[P18] MURAL: 2 | Siemens, Wallbox
+[P18] UNIVERSIDAD: 1 | ABB
+[P19] Fabricante: Enel X
+[P19] Anio instalacion: 2025
+[P19] Voltaje nominal: 220 V
+[P19] Tipo conector: TIPO_2
+[P19] Tipo cargador: PEDESTAL
+[P19] Numero conectores: 1
+[P19] Puestos parqueo: 1
+[P19] Potencia maxima: 22.0 kW
+[P19] Ubicacion: PARQUEADERO_PUBLICO
+[P19] Potencia actual: 0.0 kW
+[P20] Copia: Delta; potencia: 0.0 kW; registros: 0; total cargadores: 6
+[P21] Fabricante: ABB
+[P21] Anio instalacion: 2023
+[P21] Voltaje nominal: 400 V
+[P21] Tipo conector: CCS2
+[P21] Tipo cargador: RAPIDO_DC
+[P21] Numero conectores: 2
+[P21] Puestos parqueo: 2
+[P21] Potencia maxima: 60.0 kW
+[P21] Ubicacion: UNIVERSIDAD
+[P21] Potencia actual: 0.0 kW
+[P21] ----- BITACORA -----
+[P21] Registro #1 | Fabricante: ABB | Anio: 2023 | Potencia: 40.0 kW | Evento: Potencia establecida en 40.0 kW | Valido: true
+[P21] Registro #2 | Fabricante: ABB | Anio: 2023 | Potencia: 55.0 kW | Evento: Aumento de potencia en 15.0 kW | Valido: true
+[P21] Registro #3 | Fabricante: ABB | Anio: 2023 | Potencia: 55.0 kW | Evento: Intento invalido de aumentar potencia en 10.0 kW | Valido: false
+[P21] Registro #4 | Fabricante: ABB | Anio: 2023 | Potencia: 25.0 kW | Evento: Reduccion de potencia en 30.0 kW | Valido: true
+[P21] Registro #5 | Fabricante: ABB | Anio: 2023 | Potencia: 30.0 kW | Evento: Aumento de potencia en 5.0 kW | Valido: true
+[P21] Registro #6 | Fabricante: ABB | Anio: 2023 | Potencia: 35.0 kW | Evento: Paso 1 de aumento en 5.0 kW | Valido: true
+[P21] Registro #7 | Fabricante: ABB | Anio: 2023 | Potencia: 40.0 kW | Evento: Paso 2 de aumento en 5.0 kW | Valido: true
+[P21] Registro #8 | Fabricante: ABB | Anio: 2023 | Potencia: 45.0 kW | Evento: Paso 3 de aumento en 5.0 kW | Valido: true
+[P21] Registro #9 | Fabricante: ABB | Anio: 2023 | Potencia: 45.0 kW | Evento: Intento invalido de reducir potencia en 50.0 kW | Valido: false
+[P21] Registro #10 | Fabricante: ABB | Anio: 2023 | Potencia: 0.0 kW | Evento: Carga cortada. Potencia establecida en 0 kW | Valido: true
+[P22] Contador global de registros: 14
+[P23] Promedio con null: 60.0
+[P23] Conteo de arreglo null: [0, 0, 0, 0, 0, 0]
+[R] N = 28; r = 0; ruta 0: cargadores con 2 conectores
+[R] Resultado: 2 | ABB, Delta
+[X01] N = 28; d1 = 2; d2 = 8
+[X01] Fabricante: USC-28
+[X01] Anio instalacion: 2023
+[X01] Voltaje nominal: 220 V
+[X01] Tipo conector: CHADEMO
+[X01] Tipo cargador: PORTATIL
+[X01] Numero conectores: 3
+[X01] Puestos parqueo: 1
+[X01] Potencia maxima: 48.0 kW
+[X01] Ubicacion: RESIDENCIAL
+[X01] Potencia actual: 0.0 kW
+[X02] Paso 2 rechazado. La potencia resultante seria 50.0 kW.
+[X02] Potencia C6: 37.0 kW
+[X02] Algun paso rechazado: si
+[X03] Tiempo estimado: 1.03 horas
+[X04] Flota extendida: 6 cargadores
+[X05] MURAL: 2
+[X05] PEDESTAL: 1
+[X05] RAPIDO_DC: 1
+[X05] ULTRARRAPIDO: 1
+[X05] PORTATIL: 1
+[X05] BIDIRECCIONAL_V2G: 0
+[X05] Promedio: 31.07 kW
+[X05] Mayor potencia: Delta | 120.0 kW
+[X05] Excesos validos: 2
+[X06] Total cargadores: 7
+[X06] Contador global de registros: 17
+[X06] Fabricante: USC-28
+[X06] Anio instalacion: 2023
+[X06] Voltaje nominal: 220 V
+[X06] Tipo conector: CHADEMO
+[X06] Tipo cargador: PORTATIL
+[X06] Numero conectores: 3
+[X06] Puestos parqueo: 1
+[X06] Potencia maxima: 48.0 kW
+[X06] Ubicacion: RESIDENCIAL
+[X06] Potencia actual: 37.0 kW
+[X06] ----- BITACORA -----
+[X06] Registro #15 | Fabricante: USC-28 | Anio: 2023 | Potencia: 24.0 kW | Evento: Potencia establecida en 24.0 kW | Valido: true
+[X06] Registro #16 | Fabricante: USC-28 | Anio: 2023 | Potencia: 37.0 kW | Evento: Paso 1 de aumento en 13.0 kW | Valido: true
+[X06] Registro #17 | Fabricante: USC-28 | Anio: 2023 | Potencia: 37.0 kW | Evento: Paso 2 invalido al aumentar 13.0 kW | Valido: false

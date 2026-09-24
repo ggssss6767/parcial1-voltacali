@@ -363,7 +363,7 @@ public class CargadorVE {
      * Cambia la potencia actual si el valor es valido.
      */
     public void setPotenciaActual(double nuevaPotencia) {
-        if (nuevaPotencia < 0 || nuevaPotencia > potenciaMaxima) {
+        if (!Double.isFinite(nuevaPotencia) || nuevaPotencia < 0 || nuevaPotencia > potenciaMaxima) {
             System.out.println(
                     "Potencia invalida. Debe estar entre 0 y "
                             + potenciaMaxima + " kW."
@@ -400,6 +400,19 @@ public class CargadorVE {
     }
 
     /**
+     * Cuenta los intentos rechazados sin modificar el historial.
+     */
+    public int contarIntentosInvalidos() {
+        int cantidad = 0;
+        for (RegistroSesion registro : bitacora) {
+            if (!registro.isValido()) {
+                cantidad++;
+            }
+        }
+        return cantidad;
+    }
+
+    /**
      * Aumenta la potencia usando el incremento por defecto.
      */
     public void aumentarPotencia() {
@@ -412,7 +425,7 @@ public class CargadorVE {
     public void aumentarPotencia(double incremento) {
         double nuevaPotencia = potenciaActual + incremento;
 
-        if (nuevaPotencia > potenciaMaxima || nuevaPotencia < 0) {
+        if (!Double.isFinite(nuevaPotencia) || nuevaPotencia > potenciaMaxima || nuevaPotencia < 0) {
             System.out.println(
                     "No se puede aumentar la potencia. "
                             + "El resultado seria "
@@ -442,7 +455,7 @@ public class CargadorVE {
         for (int i = 0; i < veces; i++) {
             double nuevaPotencia = potenciaActual + incremento;
 
-            if (nuevaPotencia > potenciaMaxima
+            if (!Double.isFinite(nuevaPotencia) || nuevaPotencia > potenciaMaxima
                     || nuevaPotencia < 0) {
 
                 System.out.println(
@@ -477,7 +490,7 @@ public class CargadorVE {
     public void reducirPotencia(double reduccion) {
         double nuevaPotencia = potenciaActual - reduccion;
 
-        if (nuevaPotencia < 0
+        if (!Double.isFinite(nuevaPotencia) || nuevaPotencia < 0
                 || nuevaPotencia > potenciaMaxima) {
 
             System.out.println(
